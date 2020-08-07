@@ -203,3 +203,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(Navigator_server src/Navigator_server.cpp)
+target_link_libraries(Navigator_server ${catkin_LIBRARIES})
+add_dependencies(Navigator_server first_task_gencpp)
