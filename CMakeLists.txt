@@ -211,3 +211,7 @@ add_dependencies(Navigator_server first_task_gencpp)
 add_executable(Navigator_client src/Navigator_client.cpp)
 target_link_libraries(Navigator_client ${catkin_LIBRARIES})
 add_dependencies(Navigator_client first_task_gencpp)
+
+add_executable(AutoPose src/AutoPose.cpp)
+target_link_libraries(AutoPose ${catkin_LIBRARIES})
+add_dependencies(AutoPose first_task_gencpp)
