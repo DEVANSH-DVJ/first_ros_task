@@ -207,3 +207,7 @@ include_directories(
 add_executable(Navigator_server src/Navigator_server.cpp)
 target_link_libraries(Navigator_server ${catkin_LIBRARIES})
 add_dependencies(Navigator_server first_task_gencpp)
+
+add_executable(Navigator_client src/Navigator_client.cpp)
+target_link_libraries(Navigator_client ${catkin_LIBRARIES})
+add_dependencies(Navigator_client first_task_gencpp)
